@@ -8,8 +8,8 @@ return skillsArray.map(skill => {
 return "${skill.name} (${skill.proficiency})";
 });
 }
-const formattedSkills = formatSkills(skills);
-console.log(formattedSkills);
+const frskills = formatSkills(skills);
+console.log(frskills);
 
 const advancedSkills = skills.filter(skill => skill.proficiency === "Advanced");
 console.log(advancedSkills);
@@ -19,7 +19,7 @@ console.log(sortedSkills);
 
 const skillsWithExperience = skills.map(skill => ({
   ...skill,
-  years: Math.floor(Math.random() * 6) + 1 // random 1–6 years
+  years: Math.floor(Math.random() * 6) + 1 
 }));
 console.log(skillsWithExperience);
 
